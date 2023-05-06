@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { BsXLg } from 'react-icons/bs'
 
 
@@ -9,12 +9,17 @@ type Props = {
 export default function DrawerHeader({ close, isOpen }: Props) {
 
     const nav = useNavigate()
+    const location = useLocation()
 
 
     return (
         <div className="absolute top-0 w-full flex flex-col bg-zinc-900 border-b-2 px-6 py-4 gap-12">
             <div className="flex justify-between">
-                <text className="text-xl font-extrabold">andre's <span className="text-red-600">gym</span></text>
+                <button
+                onClick={() => nav("/")}
+                >
+                    <text className="text-xl font-extrabold">andre's <span className="text-red-600">gym</span></text>
+                </button>
                 <button
                     onClick={() => close(!isOpen)}
                 >
@@ -22,25 +27,28 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                 </button>
             </div>
 
-            <div className="flex gap-12 justify-center">
+            <div className="flex gap-4 justify-center">
                 <button
+                    className={location.pathname === "/planos" ? `shadow-underline` : undefined}
                     onClick={() => nav("/planos")}
                 >
-                    <text className="text-xl font-bold">
+                    <text className="text-md font-bold">
                         Planos
                     </text>
                 </button>
                 <button
+                    className={location.pathname === "/sobre-nos" ? `shadow-underline` : undefined}
                     onClick={() => nav("/sobre-nos")}
                 >
-                    <text className="text-xl font-bold">
+                    <text className="text-md font-bold">
                         Sobre nós
                     </text>
                 </button>
                 <button
+                    className={location.pathname === "/contato" ? `shadow-underline` : undefined}
                     onClick={() => nav("/contato")}
                 >
-                    <text className="text-xl font-bold">
+                    <text className="text-md font-bold">
                         Contato
                     </text>
                 </button>

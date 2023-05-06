@@ -14,7 +14,11 @@ export default {
       },
       colors: {
         "zinc-901" : "#1A1A1D"
+      },
+      boxShadow: {
+        "underline" : "0 2px 0px 0px #fff "
       }
+    
     },
   },
   plugins: [],

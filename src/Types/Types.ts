@@ -19,3 +19,11 @@ export interface IFaq {
     question:string;
     response:string
 }
+
+export interface IPlan {
+    title: string;
+    prevPrice: number;
+    atualPrice: number;
+    benefits: string[];
+    details : string[]
+}

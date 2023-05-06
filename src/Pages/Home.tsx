@@ -109,10 +109,10 @@ export default function Home() {
                     }
                 </div>
             </div>
-            <div className="flex justify-between bg-zinc-800 py-6 px-12 mx-6 rounded-sm">
+            <div className="flex justify-between bg-zinc-800 py-6 px-12 mx-6 rounded-sm flex-wrap gap-6">
                 <div className="flex flex-col justify-center items-start">
-                    <text className="text-2xl md:text-4xl font-black text-white text-center">Planos que cabem no seu bolso!</text>
-                    <text className="text-xl md:text-2xl font-bold text-white text-center">Veja qual plano é melhor pra você</text>
+                    <text className="text-2xl md:text-4xl font-black text-white">Planos que cabem no seu bolso!</text>
+                    <text className="text-xl md:text-2xl font-bold text-white ">Veja qual plano é melhor pra você</text>
                 </div>
                 <button className="flex justify-between px-6 py-4 bg-zinc-200 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72">
                     <text className="text-xl font-bold">
