@@ -12,6 +12,9 @@ export default {
       backgroundImage:{
         'dumbell-banner' : "url(./src/assets/dumbellsBanner.svg)"
       },
+      colors: {
+        "zinc-901" : "#1A1A1D"
+      }
     },
   },
   plugins: [],
