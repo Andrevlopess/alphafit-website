@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -17,8 +18,7 @@ export default {
       },
       boxShadow: {
         "underline" : "0 2px 0px 0px #fff "
-      }
-    
+      },
     },
   },
   plugins: [],

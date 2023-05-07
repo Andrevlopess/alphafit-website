@@ -27,7 +27,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                     <button
                         onClick={() => nav("/")}
                     >
-                        <text className="text-xl font-extrabold">andre's <span className="text-red-600">gym</span></text>
+                        <label className="text-xl font-extrabold">andre's <span className="text-red-600">gym</span></label>
                     </button>
                     <button
                         onClick={() => close(!isOpen)}
@@ -41,33 +41,33 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                         className={location.pathname === "/planos" ? `shadow-underline` : undefined}
                         onClick={() => nav("/planos")}
                     >
-                        <text className="text-md font-bold">
+                        <label className="text-md font-bold">
                             Planos
-                        </text>
+                        </label>
                     </button>
                     <button
                         className={location.pathname === "/sobre-nos" ? `shadow-underline` : undefined}
                         onClick={() => nav("/sobre-nos")}
                     >
-                        <text className="text-md font-bold">
+                        <label className="text-md font-bold">
                             Sobre nós
-                        </text>
+                        </label>
                     </button>
                     <button
                         className={location.pathname === "/contato" ? `shadow-underline` : undefined}
                         onClick={() => nav("/contato")}
                     >
-                        <text className="text-md font-bold">
+                        <label className="text-md font-bold">
                             Contato
-                        </text>
+                        </label>
                     </button>
                     <button
                         onClick={() => nav("/login")}
                         className="bg-zinc-700 py-2 px-4 rounded-md"
                     >
-                        <text className="text-md font-bold">
+                        <label className="text-md font-bold">
                             Login
-                        </text>
+                        </label>
                     </button>
                 </div>
 

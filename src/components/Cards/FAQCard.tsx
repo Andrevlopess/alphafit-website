@@ -16,9 +16,9 @@ export default function FaqCard({ faq }: Props) {
             <div
                 onClick={() => setIsOpen(!isOpen)}
                 className="flex justify-between items-center gap-4">
-                <text className="text-lg md:text-2xl font-bold text-white">
+                <label className="text-lg md:text-2xl font-bold text-white">
                     {faq.question}
-                </text>
+                </label>
 
                 {isOpen ?
                     <BsChevronUp size={25} color="#fff" />
@@ -31,7 +31,7 @@ export default function FaqCard({ faq }: Props) {
             </div>
             {
                 isOpen &&
-                <text className="text-xl text-zinc-400">{faq.response}</text>
+                <label className="text-xl text-zinc-400">{faq.response}</label>
             }
         </div>
     )

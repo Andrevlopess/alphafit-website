@@ -36,14 +36,14 @@ export default function DepoimentCard({ depoiment }: Props) {
                         })
                     }
                 </div>
-                <text className='text-xl text-white font-bold text-center'>
+                <label className='text-xl text-white font-bold text-center'>
                     {depoiment.depoiment}
-                </text>
+                </label>
                 <div className='flex items-center gap-4'>
                     <img src={depoiment.authorImage} className='w-10 h-10 rounded-full' />
-                    <text className='text-xl text-white font-bold text-center'>
+                    <label className='text-xl text-white font-bold text-center'>
                         {depoiment.authorName}
-                    </text>
+                    </label>
                 </div>
             </div>
         </animated.div>

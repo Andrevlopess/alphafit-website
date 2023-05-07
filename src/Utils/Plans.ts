@@ -2,6 +2,7 @@ import { IPlan } from "../Types/Types";
 
 export const plans: IPlan[] = [
     {
+        id: 1,
         title: "Normal",
         prevPrice: 119.90,
         atualPrice: 99.90,
@@ -15,6 +16,7 @@ export const plans: IPlan[] = [
         ]
     },
     {
+        id: 2,
         title: "Premium",
         prevPrice: 149.90,
         atualPrice: 119.90,

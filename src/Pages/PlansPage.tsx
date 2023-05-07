@@ -10,14 +10,14 @@ export default function PlansPage() {
         <div className="font-inter bg-zinc-900">
             <Header />
             <div className="flex flex-col justify-center items-center gap-12 md:gap-36 my-12 md:my-36">
-                <text className="text-4xl lg:text-7xl font-black text-white">
+                <label className="text-4xl lg:text-7xl font-black text-white">
                     Nossos planos
-                </text>
+                </label>
 
                 <div className="grid md:grid-cols-2 gap-16 px-4">
                     {plans.map(plan => {
                         return (
-                            <PlanCard plan={plan} />
+                            <PlanCard plan={plan} key={plan.id}/>
                         )
                     })}
                 </div>

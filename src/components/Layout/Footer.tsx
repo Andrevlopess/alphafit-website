@@ -6,31 +6,31 @@ export default function Footer() {
 
     return (
         <div className="flex flex-col border-t-2 items-center justify-center text-white gap-12 py-6">
-            <text className="text-xl font-extrabold border-b-2 pb-2">andre's <span className="text-red-600">gym</span></text>
+            <label className="text-xl font-extrabold border-b-2 pb-2">andre's <span className="text-red-600">gym</span></label>
             <div className="flex gap-12">
                 <button
                     onClick={() => nav("/planos")}
                 >
-                    <text className="text-md font-bold">
+                    <label className="text-md font-bold">
                         Planos
-                    </text>
+                    </label>
                 </button>
                 <button
                     onClick={() => nav("/sobre-nos")}
                 >
-                    <text className="text-md font-bold">
+                    <label className="text-md font-bold">
                         Sobre nós
-                    </text>
+                    </label>
                 </button>
                 <button
                     onClick={() => nav("/contato")}
                 >
-                    <text className="text-md font-bold">
+                    <label className="text-md font-bold">
                         Contato
-                    </text>
+                    </label>
                 </button>
             </div>
-            <text className="text-sm text-zinc-400">Todos os direitos reservados andre vitor lopes &copy;</text>
+            <label className="text-sm text-zinc-400">Todos os direitos reservados andre vitor lopes &copy;</label>
         </div>
     )
 }
