@@ -1,10 +1,11 @@
-
-import { plans } from "../Utils/PLans";
+import { plans } from "../Utils/Plans";
 import PlanCard from "../components/Cards/PlansCard";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 
 export default function PlansPage() {
+
+
     return (
         <div className="font-inter bg-zinc-900">
             <Header />

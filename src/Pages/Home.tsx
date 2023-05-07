@@ -8,8 +8,27 @@ import DepoimentCard from "../components/Cards/DepoimentsCard";
 import { faq } from "../Utils/FAQ";
 import FaqCard from "../components/Cards/FAQCard";
 import Footer from "../components/Layout/Footer";
+import { useInView, animated } from '@react-spring/web'
+import { useNavigate } from "react-router-dom";
+
 
 export default function Home() {
+
+    const nav = useNavigate()
+
+    const [ref, spring] = useInView(
+        () => ({
+            from: {
+                opacity: 0,
+                y: 100,
+            },
+            to: {
+                opacity: 1,
+                y: 0,
+            },
+        }),
+    )
+
     return (
         <div className="font-inter bg-zinc-900 flex flex-col gap-36">
             <Header />
@@ -21,7 +40,9 @@ export default function Home() {
                     <span className="text-5xl lg:text-7xl font-black text-red-600">evoluir</span>
                 </div>
                 <text className="text-2xl lg:text-4xl font-bold text-white">Venha conhecer nossas academias!</text>
-                <button className="flex justify-between px-6 py-4 bg-zinc-200 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72">
+                <button 
+                onClick={() => nav("/planos")}
+                className="flex justify-between px-6 py-4 bg-zinc-200 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72">
                     <text className="text-xl font-bold">
                         Ver Planos
                     </text>
@@ -29,7 +50,7 @@ export default function Home() {
                 </button>
             </div>
 
-            <div className="grid lg:grid-cols-3 mx-12 content-start gap-6 bg-zinc-901  py-6 rounded-sm">
+            <div className="grid lg:grid-cols-3 gap-6 bg-zinc-901 mx-6 py-6 rounded-sm">
                 {
                     features.map(feature => {
                         return (
@@ -42,17 +63,23 @@ export default function Home() {
 
 
             <div className="flex px-12 items-center justify-between flex-wrap gap-36 md:gap-0">
-                <div className="flex flex-col gap-12 lg:gap-36">
-                    <div className="border-l-4 border-red-600 flex flex-col px-4">
-                        <text className="text-xl text-white font-bold">Mais de</text>
-                        <text className="text-5xl sm:text-6xl text-red-600 font-extrabold">50 mil</text>
-                        <text className="text-xl text-white font-bold">alunos já passaram por nossas academias</text>
+                <animated.div
+                    style={spring}
+                    className="flex"
+                    ref={ref}
+                >
+                    <div className="flex flex-col gap-12 lg:gap-36">
+                        <div className="border-l-4 border-red-600 flex flex-col px-4">
+                            <text className="text-xl text-white font-bold">Mais de</text>
+                            <text className="text-5xl sm:text-6xl text-red-600 font-extrabold">50 mil</text>
+                            <text className="text-xl text-white font-bold">alunos já passaram por nossas academias</text>
+                        </div>
+                        <div className="border-l-4 border-red-600 flex flex-col px-4">
+                            <text className="text-5xl sm:text-6xl text-red-600 font-extrabold">20 unidades</text>
+                            <text className="text-xl text-white font-bold">espalhadas por 17 estados do Brasil</text>
+                        </div>
                     </div>
-                    <div className="border-l-4 border-red-600 flex flex-col px-4">
-                        <text className="text-5xl sm:text-6xl text-red-600 font-extrabold">20 unidades</text>
-                        <text className="text-xl text-white font-bold">espalhadas por 17 estados do Brasil</text>
-                    </div>
-                </div>
+                </animated.div>
                 <img src={ExerciseIllustration} />
             </div>
 
@@ -62,7 +89,6 @@ export default function Home() {
                     <text className="text-lg font-semibold text-zinc-400">Modalidades</text>
                     <text className="text-3xl sm:text-5xl font-extrabold text-white">Modalidades andre's <span className="text-red-600">gym</span></text>
                 </div>
-
 
                 <div className="grid lg:grid-cols-3 gap-6 bg-zinc-901 py-6 rounded-sm">
                     {
@@ -114,7 +140,9 @@ export default function Home() {
                     <text className="text-2xl md:text-4xl font-black text-white">Planos que cabem no seu bolso!</text>
                     <text className="text-xl md:text-2xl font-bold text-white ">Veja qual plano é melhor pra você</text>
                 </div>
-                <button className="flex justify-between px-6 py-4 bg-zinc-200 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72">
+                <button 
+                 onClick={() => nav("/planos")}
+                className="flex justify-between px-6 py-4 bg-zinc-200 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72">
                     <text className="text-xl font-bold">
                         Ver Planos
                     </text>

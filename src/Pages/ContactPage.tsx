@@ -1,4 +1,4 @@
-import { plans } from "../Utils/PLans";
+import { plans } from "../Utils/Plans";
 import PlanCard from "../components/Cards/PlansCard";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
@@ -46,7 +46,7 @@ export default function ContactPage() {
                             <text className="text-zinc-950 font-bold text-2xl">Enviar</text>
                         </button>
                         <button>
-                            <text className="text-zinc-300 text-sm text-center">Veja as perguntas frequentes</text>
+                            <text className="text-zinc-300 text-sm text-center underline">Veja as perguntas frequentes</text>
                         </button>
                     </div>
                 </div>
