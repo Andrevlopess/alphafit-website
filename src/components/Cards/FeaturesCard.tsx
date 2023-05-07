@@ -28,9 +28,9 @@ export default function FeatureCard({ feature }: Props) {
             style={spring}
         >
             <div className="flex flex-col gap-6 justify-start items-center p-4 hover:scale-105 transition">
-                <label className="text-2xl font-bold text-white text-center">{feature.title}</label>
+                <label className="text-2xl font-bold text-zinc-900 dark:text-white text-center">{feature.title}</label>
                 {feature.icon}
-                <label className="text-xl font-bold text-white text-center">{feature.description}</label>
+                <label className="text-xl font-bold text-zinc-900 dark:text-white text-center">{feature.description}</label>
             </div>
         </animated.div>
 

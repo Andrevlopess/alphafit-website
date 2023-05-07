@@ -25,16 +25,16 @@ export default function PlanCard({ plan }: Props) {
             ref={ref}
             style={spring}
         >
-            <div className="flex flex-col border-t-8 border-red-500 gap-12 items-center p-8 bg-zinc-800 justify-between shadow-2xl">
+            <div className="flex flex-col border-t-8 border-red-500 gap-12 items-center p-8 dark:bg-zinc-900 bg-zinc-100 justify-between shadow-2xl">
                 <div className="flex flex-col gap-12">
-                    <label className="text-2xl md:text-3xl font-extrabold text-white text-center">
+                    <label className="text-2xl md:text-3xl font-extrabold text-zinc-900 dark:text-white text-center">
                         {plan.title}
                    </label>
                     <div className="flex flex-col justify-center items-center gap-2">
-                        <label className="text-lg md:text-xl font-extrabold text-white text-center">
+                        <label className="text-lg md:text-xl font-extrabold text-zinc-900 dark:text-white text-center">
                             de <span className="line-through">{plan.prevPrice.toLocaleString(undefined, { minimumFractionDigits: 2 })}</span> por
                        </label>
-                        <label className="text-2xl md:text-4xl font-extrabold text-white text-center">
+                        <label className="text-2xl md:text-4xl font-extrabold text-zinc-900 dark:text-white text-center">
                             {`R$ ${plan.atualPrice.toLocaleString(undefined, { minimumFractionDigits: 2 })}`}
                        </label>
                     </div>
@@ -45,7 +45,7 @@ export default function PlanCard({ plan }: Props) {
                             return (
                                 <div className="flex items-center gap-6" key={i}>
                                     <BsCheck2 color="green" size={25} />
-                                    <label className="text-md md:text-lg font-semibold text-white">
+                                    <label className="text-md md:text-lg font-semibold text-zinc-900 dark:text-white">
                                         {benefit}
                                    </label>
                                 </div>
@@ -60,14 +60,14 @@ export default function PlanCard({ plan }: Props) {
                     <div className="flex flex-col justify-center items-center gap-2">
                         {plan.details.map((detail, i) => {
                             return (
-                                <label className="text-sm text-zinc-300" key={i}>
+                                <label className="text-sm text-zinc-900 dark:text-zinc-300" key={i}>
                                     {detail}
                                </label>
                             )
                         })}
                     </div>
-                    <button className="hover:opacity-80 flex items-center justify-center  py-4 bg-zinc-100 shadow-xl rounded-sm">
-                        <label className="text-zinc-950 font-bold text-2xl">Assinar</label>
+                    <button className="hover:opacity-90 flex items-center justify-center  py-4 bg-zinc-900 dark:bg-zinc-100 shadow-xl rounded-sm">
+                        <label className="dark:text-zinc-900 text-white font-bold text-2xl">Assinar</label>
                     </button>
                 </div>
 

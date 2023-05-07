@@ -17,7 +17,8 @@ export default {
         "zinc-901" : "#1A1A1D"
       },
       boxShadow: {
-        "underline" : "0 2px 0px 0px #fff "
+        "underline-dark" : "0 2px 0px 0px #fff",
+        "underline-light" : "0 2px 0px 0px #18181b"
       },
     },
   },
