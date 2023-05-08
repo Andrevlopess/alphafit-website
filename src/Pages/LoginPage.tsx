@@ -24,7 +24,7 @@ export default function LoginPage() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12">
+        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12  transition">
             <FAB />
             <Header />
             <div className="flex justify-center items-center gap-12 px-6 flex-wrap-reverse">
@@ -51,7 +51,7 @@ export default function LoginPage() {
                                 required
                                 autoComplete="on"
                                 type="password"
-                                className=" border-zinc-900 dark:border-white border-2 outline-none bg-transparent text-zinc-900 dark:text-white text-semibold px-4 py-2 w-full"
+                                className="rounded-sm border-zinc-900 dark:border-white border-2 outline-none bg-transparent text-zinc-900 dark:text-white text-semibold px-4 py-2 w-full"
                             />
                         </div>
                         <button>

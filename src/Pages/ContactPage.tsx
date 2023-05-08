@@ -24,7 +24,7 @@ export default function ContactPage() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100">
+        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 transition">
             <FAB />
             <Header />
             <div className="px-6 py-4 flex flex-col  gap-12 md:gap-24 my-12 md:my-24">

@@ -32,3 +32,9 @@ export interface IPlan {
     benefits: string[];
     details : string[]
 }
+export interface IFundador {
+    id:number;
+    name:string;
+    profileImage:string;
+    function: string;
+}

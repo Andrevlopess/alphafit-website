@@ -11,7 +11,7 @@ export default {
         'inter': ["Inter", "sans-serif"]
       },
       backgroundImage:{
-        'dumbell-banner' : "url(./src/assets/dumbellsBanner.svg)"
+        'dumbell-banner' : "url(./src/assets/HeroBanner.svg)"
       },
       colors: {
         "zinc-901" : "#1A1A1D"

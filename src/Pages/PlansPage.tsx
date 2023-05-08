@@ -8,7 +8,7 @@ export default function PlansPage() {
 
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100">
+        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 transition">
             <FAB/>
             <Header />
             <div className="flex flex-col justify-center items-center gap-12 md:gap-36 my-12 md:my-36">

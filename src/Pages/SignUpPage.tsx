@@ -25,7 +25,7 @@ export default function SignUpPage() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12">
+        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12 transition">
             <FAB />
             <Header />
             <div className="flex justify-center items-center gap-12 px-6 flex-wrap-reverse">

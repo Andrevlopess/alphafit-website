@@ -1,6 +1,7 @@
 import { IPlan } from "../../Types/Types"
 import { BsCheck2 } from 'react-icons/bs'
 import { useInView, animated } from '@react-spring/web'
+import { useNavigate } from "react-router-dom"
 
 type Props = {
     plan: IPlan
@@ -17,7 +18,10 @@ export default function PlanCard({ plan }: Props) {
                 opacity: 1,
             },
         }),
+        {once:true}
     )
+
+    const nav = useNavigate()
 
     return (
         <animated.div
@@ -66,7 +70,9 @@ export default function PlanCard({ plan }: Props) {
                             )
                         })}
                     </div>
-                    <button className="hover:opacity-90 flex items-center justify-center  py-4 bg-zinc-900 dark:bg-zinc-100 shadow-xl rounded-sm">
+                    <button
+                    onClick={() => nav("/login")}
+                    className="hover:opacity-90 flex items-center justify-center  py-4 bg-zinc-900 dark:bg-zinc-100 shadow-xl rounded-sm">
                         <label className="dark:text-zinc-900 text-white font-bold text-2xl">Assinar</label>
                     </button>
                 </div>

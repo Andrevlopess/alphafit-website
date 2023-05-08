@@ -31,7 +31,7 @@ export default function FaqCard({ faq }: Props) {
             </div>
             {
                 isOpen &&
-                <label className="text-xl text-zinc-400">{faq.response}</label>
+                <label className="text-xl dark:text-zinc-400 text-zinc-700">{faq.response}</label>
             }
         </div>
     )

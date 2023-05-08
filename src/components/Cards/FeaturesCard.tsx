@@ -19,6 +19,7 @@ export default function FeatureCard({ feature }: Props) {
                 y: 0,
             },
         }),
+        {once:true}
     )
 
     return (

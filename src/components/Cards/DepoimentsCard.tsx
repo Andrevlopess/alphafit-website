@@ -19,6 +19,7 @@ export default function DepoimentCard({ depoiment }: Props) {
                 y: 0,
             },
         }),
+        {once:true}
     )
 
     return (

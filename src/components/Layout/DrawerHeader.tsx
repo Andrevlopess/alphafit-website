@@ -38,7 +38,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
 
             <div className="flex gap-4 justify-center">
                 <button
-                    className={location.pathname === "/planos" ? `shadow-underline` : undefined}
+                    className={location.pathname === "/planos" ? `dark:shadow-underline-dark shadow-underline-light` : undefined}
                     onClick={() => nav("/planos")}
                 >
                     <label className="text-md font-bold">
@@ -46,7 +46,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                     </label>
                 </button>
                 <button
-                    className={location.pathname === "/sobre-nos" ? `shadow-underline` : undefined}
+                    className={location.pathname === "/sobre-nos" ? `dark:shadow-underline-dark shadow-underline-light` : undefined}
                     onClick={() => nav("/sobre-nos")}
                 >
                     <label className="text-md font-bold">
@@ -54,7 +54,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                     </label>
                 </button>
                 <button
-                    className={location.pathname === "/contato" ? `shadow-underline` : undefined}
+                    className={location.pathname === "/contato" ? `dark:shadow-underline-dark shadow-underline-light` : undefined}
                     onClick={() => nav("/contato")}
                 >
                     <label className="text-md font-bold">

@@ -28,13 +28,14 @@ export default function Home() {
                 y: 0,
             },
         }),
+        {once:true}
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-36 ">
+        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-24 md:gap-36 transition">
             <FAB />
             <Header />
-            <div className="flex px-20 items-start flex-col gap-6">
+            <div className="flex md:px-20 px-12 items-start flex-col gap-6">
                 <div className=" flex flex-col">
                     <label className="text-5xl lg:text-7xl font-black text-zinc-900 dark:text-white">
                         Seu novo modo de
@@ -121,7 +122,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center px-6 gap-12 md:gap-36">
+            <div className="flex flex-col justify-center items-center px-6 md:px-12 gap-12 md:gap-36">
                 <div className="flex flex-col items-center justify-center gap-4">
                     <label className="text-lg font-semibold text-zinc-400">FAQ's</label>
                     <label className="text-3xl md:text-5xl font-extrabold text-zinc-900 dark:text-white text-center">Perguntas frequentes</label>
