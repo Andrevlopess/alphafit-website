@@ -100,9 +100,6 @@ export default function LoginPage() {
                         </label>
                     </button>
                 </animated.div>
-
-
-
             </div>
             <Footer />
         </div>

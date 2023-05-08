@@ -45,7 +45,7 @@ export default function Home() {
                 <label className="text-2xl lg:text-4xl font-bold text-zinc-900 dark:text-white">Venha conhecer nossas academias!</label>
                 <button
                     onClick={() => nav("/planos")}
-                    className="hover:opacity-90 flex justify-between px-6 py-4 border-2 border-zinc-900 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72 dark:border-zinc-100">
+                    className="hover:opacity-90 dark:hover:bg-zinc-800 hover:bg-zinc-200 flex justify-between px-6 py-4 border-2 border-zinc-900 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72 dark:border-zinc-100">
                     <label className="text-xl font-bold text-zinc-900 dark:text-white">
                         Ver Planos
                     </label>
@@ -62,8 +62,6 @@ export default function Home() {
                     })
                 }
             </div>
-
-
 
             <div className="flex px-12 items-center justify-between flex-wrap gap-36 md:gap-0">
                 <animated.div
