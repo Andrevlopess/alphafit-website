@@ -28,21 +28,25 @@ export default function Home() {
                 y: 0,
             },
         }),
-        {once:true}
+        { once: true }
     )
 
     return (
         <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col justify-center transition">
             <FAB />
             <Header />
-            <div className="flex md:px-20 px-12 items-start flex-col gap-6 h-screen justify-center bg-hero-banner bg-cover bg-no-repeat">
-                <div className=" flex flex-col">
+            <div className="flex md:px-20 px-12 items-start flex-col gap-6 lg:h-screen p-20 justify-center bg-hero-banner bg-cover bg-no-repeat">
+                <div className=" flex flex-col gap-2 md:w-4/5">
                     <label className="text-5xl lg:text-7xl font-black text-zinc-900 dark:text-white">
-                        Seu novo modo de
+                        Transforme seu corpo
                     </label>
-                    <span className="text-5xl lg:text-7xl font-black text-red-500">evoluir</span>
+                    <label className="text-5xl lg:text-7xl font-black text-red-500 dark:text-red-600">
+                        Supere seus limites
+                    </label>
+                    <label className="text-xl lg:text-2xl font-semibold text-zinc-900 dark:text-white md:w-2/3">
+                        Descubra um novo nível de fitness e faça parte da nossa comunidade apaixonada por saúde e bem-estar.
+                    </label>
                 </div>
-                <label className="text-2xl lg:text-4xl font-bold text-zinc-900 dark:text-white">Venha conhecer nossas academias!</label>
                 <button
                     onClick={() => nav("/planos")}
                     className="hover:opacity-90 dark:hover:bg-zinc-800 hover:bg-zinc-200 flex justify-between px-6 py-4 border-2 border-zinc-900 rounded-sm gap-6 shadow-2xl items-center w-full sm:w-72 dark:border-zinc-100">

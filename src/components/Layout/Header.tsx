@@ -12,10 +12,11 @@ export default function Header() {
     const nav = useNavigate()
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
+    //  
     return (
-        <div className="flex justify-between items-center border-b dark:border-white text-zinc-900  abolsute dark:text-white dark:bg-zinc-900 bg-zinc-100 border-zinc-300">
+        <div className={`flex justify-between items-center border-b dark:border-white text-zinc-900 dark:text-white border-zinc-300 transition backdrop-blur-lg`}>
             <button
-            onClick={() => nav("/")}
+                onClick={() => nav("/")}
             >
                 <label className="text-xl font-extrabold px-6 py-4">andre's <span className="text-red-600">gym</span></label>
             </button>
@@ -58,7 +59,7 @@ export default function Header() {
                 <button
                     onClick={() => nav("/login")}
                     className="dark:border-white border-zinc-900 shadow-sm border-2 py-2 px-4 rounded-md hover:opacity-90 hover:shadow-inner"
-                    
+
                 >
                     <label className="text-md font-bold">
                         Login
