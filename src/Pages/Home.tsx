@@ -32,10 +32,10 @@ export default function Home() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-24 md:gap-36 transition">
+        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col justify-center transition">
             <FAB />
             <Header />
-            <div className="flex md:px-20 px-12 items-start flex-col gap-6">
+            <div className="flex md:px-20 px-12 items-start flex-col gap-6 h-screen justify-center bg-hero-banner bg-cover bg-no-repeat">
                 <div className=" flex flex-col">
                     <label className="text-5xl lg:text-7xl font-black text-zinc-900 dark:text-white">
                         Seu novo modo de
@@ -53,7 +53,7 @@ export default function Home() {
                 </button>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-6 dark:bg-zinc-901 bg-zinc-200 mx-6 py-6 rounded-sm">
+            <div className="grid lg:grid-cols-3 gap-6 dark:bg-zinc-901 bg-zinc-200 mx-6 py-6 rounded-sm my-12">
                 {
                     features.map(feature => {
                         return (
@@ -63,7 +63,7 @@ export default function Home() {
                 }
             </div>
 
-            <div className="flex px-12 items-center justify-between flex-wrap gap-36 md:gap-0">
+            <div className="flex px-12 items-center justify-between flex-wrap gap-36 md:gap-0 my-12">
                 <animated.div
                     style={spring}
                     className="flex"
@@ -84,7 +84,7 @@ export default function Home() {
                 <img src={ExerciseIllustration} />
             </div>
 
-            <div className="flex flex-col items-center justify-center  gap-12 md:gap-36 px-6 text-center">
+            <div className="flex flex-col items-center justify-center  gap-12 md:gap-36 px-6 text-center my-12">
 
                 <div className="flex flex-col items-center justify-center gap-4">
                     <label className="text-lg font-semibold text-zinc-400">Modalidades</label>
@@ -120,7 +120,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center px-6 md:px-12 gap-12 md:gap-36">
+            <div className="flex flex-col justify-center items-center px-6 md:px-12 gap-12 md:gap-36 my-12">
                 <div className="flex flex-col items-center justify-center gap-4">
                     <label className="text-lg font-semibold text-zinc-400">FAQ's</label>
                     <label className="text-3xl md:text-5xl font-extrabold text-zinc-900 dark:text-white text-center">Perguntas frequentes</label>
@@ -136,7 +136,7 @@ export default function Home() {
                     }
                 </div>
             </div>
-            <div className="flex justify-between dark:bg-zinc-901 bg-zinc-300 py-6 px-12 mx-6 rounded-sm flex-wrap gap-6">
+            <div className="flex justify-between dark:bg-zinc-901 bg-zinc-300 py-6 px-12 mx-6 rounded-sm my-12 flex-wrap gap-6">
                 <div className="flex flex-col justify-center items-start">
                     <label className="text-2xl md:text-4xl font-black text-zinc-900 dark:text-white">Planos que cabem no seu bolso!</label>
                     <label className="text-xl md:text-2xl font-bold text-zinc-900 dark:text-white ">Veja qual plano é melhor pra você</label>

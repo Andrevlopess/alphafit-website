@@ -13,7 +13,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
     return (
-        <div className="flex justify-between items-center border-b-2 dark:border-white text-zinc-900 dark:text-white dark:bg-zinc-900 bg-zinc-100 border-zinc-300">
+        <div className="flex justify-between items-center border-b dark:border-white text-zinc-900  abolsute dark:text-white dark:bg-zinc-900 bg-zinc-100 border-zinc-300">
             <button
             onClick={() => nav("/")}
             >
