@@ -36,7 +36,7 @@ export default function Home() {
         <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col justify-center transition">
             <FAB />
             <Header />
-            <div className="flex md:px-20 px-12 items-start flex-col gap-6 lg:h-screen p-20 justify-center bg-hero-banner bg-cover bg-no-repeat"
+            <div className="flex md:px-20 px-12 items-start flex-col gap-6 lg:h-screen p-20 justify-center bg-[url('./src/assets/HeroBanner.png')] bg-cover bg-no-repeat"
             >
                 <div className=" flex flex-col gap-2 md:w-4/5">
                     <label className="text-5xl lg:text-7xl font-black text-zinc-900 dark:text-white">
