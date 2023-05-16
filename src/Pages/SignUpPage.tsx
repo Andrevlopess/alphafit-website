@@ -4,8 +4,6 @@ import GoogleLogo from '../assets/google-g-2015.svg'
 import { useNavigate } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 import { useSpring, animated } from '@react-spring/web'
-import FAB from "../components/FAB";
-
 
 export default function SignUpPage() {
 
@@ -26,7 +24,6 @@ export default function SignUpPage() {
 
     return (
         <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12 transition">
-            <FAB />
             <Header />
             <div className="flex justify-center items-center gap-12 px-6 flex-wrap-reverse">
                 <div className="flex flex-col dark:bg-zinc-901 bg-zinc-100 gap-6 py-4 px-6 shadow-xl">

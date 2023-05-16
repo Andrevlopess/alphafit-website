@@ -1,4 +1,3 @@
-import FAB from "../components/FAB";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import BrasilMap from '../assets/BrasilMap.svg'
@@ -14,7 +13,6 @@ export default function AboutUsPage() {
 
     return (
         <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-24 transition">
-            <FAB />
             <Header />
             <div className="flex items-center flex-col gap-8 border-b-2 md:mx-12 md:p-12 mx-4 p-4">
                 <label className="text-4xl lg:text-7xl font-extrabold text-zinc-900 dark:text-white">Alpha <span className="text-violet-600">fit</span></label>

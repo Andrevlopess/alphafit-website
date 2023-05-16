@@ -1,6 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom"
 import { BsXLg } from 'react-icons/bs'
 import { useSpring, animated } from '@react-spring/web'
+import AlphaLogo from '../../assets/alphaLogo.svg'
 
 
 type Props = {
@@ -27,7 +28,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                 <button
                     onClick={() => nav("/")}
                 >
-                    <label className="text-xl font-extrabold">alpha <span className="text-violet-600">fit</span></label>
+                    <img src={AlphaLogo} className="h-14 w-14" />
                 </button>
                 <button
                     onClick={() => close(!isOpen)}

@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { plans } from "../Utils/Plans";
 import PlanCard from "../components/Cards/PlansCard";
-import FAB from "../components/FAB";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import { animated, useSpring } from '@react-spring/web'
@@ -25,7 +24,6 @@ export default function ContactPage() {
 
     return (
         <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 transition">
-            <FAB />
             <Header />
             <div className="px-6 py-4 flex flex-col  gap-12 md:gap-24 my-12 md:my-24">
                 <div className="flex justify-center items-center gap-12 flex-wrap ">

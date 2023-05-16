@@ -9,7 +9,7 @@ export default function PlansPage() {
 
     return (
         <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 transition">
-            <FAB/>
+            
             <Header />
             <div className="flex flex-col justify-center items-center gap-12 md:gap-36 my-12 md:my-36">
                 <label className="text-4xl lg:text-7xl font-black text-zinc-900 dark:text-white">
