@@ -10,9 +10,6 @@ export default {
       fontFamily: {
         'archivo': ["Archivo Narrow", "sans-serif"]
       },
-      backgroundImage:{
-        'hero-banner' : "url(./src/assets/HeroBanner.png)",
-      },
       colors: {
         "zinc-901" : "#1A1A1D"
       },
