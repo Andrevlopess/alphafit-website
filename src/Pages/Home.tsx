@@ -9,6 +9,7 @@ import FaqCard from "../components/Cards/FAQCard";
 import Footer from "../components/Layout/Footer";
 import { useInView, animated } from '@react-spring/web'
 import { useNavigate } from "react-router-dom";
+import HeroImage from '../assets/HeroImage.png'
 
 export default function Home() {
 
@@ -31,8 +32,9 @@ export default function Home() {
     return (
         <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 flex flex-col justify-center transition">
             <Header />
-            <div className="flex md:px-20 px-12 items-start flex-col gap-6 lg:h-screen p-20 justify-center bg-[url('./src/assets/HeroImage.png')] bg-cover bg-no-repeat"
+            <div className="flex md:px-20 px-12 items-start flex-col gap-6 lg:h-screen p-20 justify-center bg-cover bg-no-repeat"
             >
+                <img src={HeroImage}/>
                 <div className=" flex flex-col gap-2 md:w-4/5">
                     <label className="text-5xl lg:text-7xl font-black text-zinc-900 dark:text-white">
                         Transforme seu corpo
