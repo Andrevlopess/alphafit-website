@@ -27,7 +27,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
                 <button
                     onClick={() => nav("/")}
                 >
-                    <label className="text-xl font-extrabold">andre's <span className="text-red-600">gym</span></label>
+                    <label className="text-xl font-extrabold">alpha <span className="text-violet-600">fit</span></label>
                 </button>
                 <button
                     onClick={() => close(!isOpen)}

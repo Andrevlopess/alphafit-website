@@ -24,7 +24,7 @@ export default function ContactPage() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 transition">
+        <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 transition">
             <FAB />
             <Header />
             <div className="px-6 py-4 flex flex-col  gap-12 md:gap-24 my-12 md:my-24">
@@ -32,7 +32,7 @@ export default function ContactPage() {
                     <animated.div
                         style={spring}
                         className="flex flex-col gap-4 md:w-1/3 md:px-0 px-12 items-end">
-                        <label className="text-xl font-extrabold text-zinc-900 dark:text-white ">andre's <span className="text-red-600">gym</span></label>
+                        <label className="text-xl font-extrabold text-zinc-900 dark:text-white ">alpha <span className="text-violet-600">fit</span></label>
                         <label className="text-4xl lg:text-7xl font-black text-zinc-900 dark:text-white">
                             Contato
                         </label>

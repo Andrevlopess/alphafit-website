@@ -2,7 +2,6 @@ import Header from "../components/Layout/Header";
 import { BsArrowRight } from 'react-icons/bs'
 import { features, modalidades } from "../Utils/Features";
 import FeatureCard from "../components/Cards/FeaturesCard";
-import ExerciseIllustration from '../assets/ExerciseIllustration.svg'
 import { Depoiments } from "../Utils/Depoiments";
 import DepoimentCard from "../components/Cards/DepoimentsCard";
 import { faq } from "../Utils/FAQ";
@@ -10,7 +9,6 @@ import FaqCard from "../components/Cards/FAQCard";
 import Footer from "../components/Layout/Footer";
 import { useInView, animated } from '@react-spring/web'
 import { useNavigate } from "react-router-dom";
-import FAB from "../components/FAB";
 
 export default function Home() {
 
@@ -31,8 +29,7 @@ export default function Home() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col justify-center transition">
-            <FAB />
+        <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 flex flex-col justify-center transition">
             <Header />
             <div className="flex md:px-20 px-12 items-start flex-col gap-6 lg:h-screen p-20 justify-center bg-[url('./src/assets/HeroImage.png')] bg-cover bg-no-repeat"
             >
@@ -40,7 +37,7 @@ export default function Home() {
                     <label className="text-5xl lg:text-7xl font-black text-zinc-900 dark:text-white">
                         Transforme seu corpo
                     </label>
-                    <label className="text-5xl lg:text-7xl font-black text-red-500 dark:text-red-600">
+                    <label className="text-5xl lg:text-7xl font-black text-violet-500 dark:text-violet-600">
                         Supere seus limites
                     </label>
                     <label className="text-xl lg:text-2xl font-semibold text-zinc-900 dark:text-white md:w-2/3">
@@ -67,32 +64,31 @@ export default function Home() {
                 }
             </div>
 
-            <div className="flex px-12 items-center justify-between flex-wrap gap-36 md:gap-0 my-12">
+            <div className="flex p-12 sm:p-24 items-center justify-between flex-wrap gap-36 md:gap-0 my-12 bg-[url('./src/assets/dumbellImage.png')] bg-cover bg-no-repeat backdrop-brightness-50">
                 <animated.div
                     style={spring}
                     className="flex"
                     ref={ref}
                 >
-                    <div className="flex flex-col gap-12 lg:gap-36">
-                        <div className="border-l-4 border-red-600 flex flex-col px-4">
-                            <label className="text-xl text-zinc-900 dark:text-white font-bold">Mais de</label>
-                            <label className="text-5xl sm:text-6xl text-red-600 font-extrabold">50 mil</label>
-                            <label className="text-xl text-zinc-900 dark:text-white font-bold">alunos já passaram por nossas academias</label>
+                    <div className="flex flex-col gap-12 lg:gap-36 ">
+                        <div className="border-l-4 border-violet-600 flex flex-col px-4">
+                            <label className="text-3xl text-zinc-900 dark:text-white font-bold">Mais de</label>
+                            <label className="text-5xl sm:text-7xl text-violet-600 font-extrabold">50 mil</label>
+                            <label className="text-3xl text-zinc-900 dark:text-white font-bold">alunos já passaram por nossas academias</label>
                         </div>
-                        <div className="border-l-4 border-red-600 flex flex-col px-4">
-                            <label className="text-5xl sm:text-6xl text-red-600 font-extrabold">20 unidades</label>
-                            <label className="text-xl text-zinc-900 dark:text-white font-bold">espalhadas por 17 estados do Brasil</label>
+                        <div className="border-l-4 border-violet-600 flex flex-col px-4">
+                            <label className="text-5xl sm:text-7xl text-violet-600 font-extrabold">20 unidades</label>
+                            <label className="text-3xl text-zinc-900 dark:text-white font-bold">espalhadas por 17 estados do Brasil</label>
                         </div>
                     </div>
                 </animated.div>
-                <img src={ExerciseIllustration} />
             </div>
 
             <div className="flex flex-col items-center justify-center  gap-12 md:gap-36 px-6 text-center my-12">
 
                 <div className="flex flex-col items-center justify-center gap-4">
                     <label className="text-lg font-semibold text-zinc-400">Modalidades</label>
-                    <label className="text-3xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white">Modalidades andre's <span className="text-red-600">gym</span></label>
+                    <label className="text-3xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white">Modalidades alpha <span className="text-violet-600">fit</span></label>
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-6 dark:bg-zinc-901 bg-zinc-200 py-6 rounded-sm">

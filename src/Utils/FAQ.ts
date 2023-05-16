@@ -8,13 +8,13 @@ export const faq: IFaq[] = [
     },
     {
         id:2,
-        question:  "Posso treinar em qualquer unidade andre's gym?",
+        question:  "Posso treinar em qualquer unidade alpha fit?",
         response:  "Você pode sim treinar em qualquer uma de nossas unidades caso tenha o plano premium.",
     },
     {
         id:3,
         question:  "A academia fica aberta nos feriados?",
-        response:  "Sim, a andre's gym funciona de segunda a segunda inclusive em feriados.",
+        response:  "Sim, a alpha fit funciona de segunda a segunda inclusive em feriados.",
     },
     {
         id:4,
@@ -24,6 +24,6 @@ export const faq: IFaq[] = [
     {
         id:5,
         question:  "Posso fazer uma aula experimental?",
-        response: "Claro, na andre's gym você pode fazer até 3 aulas experimentais antes de se matricular.",
+        response: "Claro, na alpha fit você pode fazer até 3 aulas experimentais antes de se matricular.",
     },
 ]

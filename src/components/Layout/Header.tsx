@@ -3,7 +3,7 @@ import DrawerHeader from "./DrawerHeader"
 import { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import { useLocation } from "react-router-dom";
-
+import AlphaLogo from '../../assets/alphaLogo.svg'
 
 export default function Header() {
 
@@ -14,11 +14,11 @@ export default function Header() {
 
     //  
     return (
-        <div className={`flex justify-between items-center border-b dark:border-white text-zinc-900 dark:text-white border-zinc-300 transition backdrop-blur-lg`}>
+        <div className={`flex justify-between items-center border-b dark:border-white text-zinc-900 dark:text-white border-zinc-300 transition backdrop-blur-lg px-6`}>
             <button
                 onClick={() => nav("/")}
             >
-                <label className="text-xl font-extrabold px-6 py-4">andre's <span className="text-red-600">gym</span></label>
+               <img src={AlphaLogo} className="h-14 w-14"/>
             </button>
 
             {isOpen &&
@@ -31,7 +31,7 @@ export default function Header() {
                 <AiOutlineMenu className="dark:invert" color="#000" size={25} />
             </button>
 
-            <div className="sm:flex gap-10 hidden sm:show px-6 py-4">
+            <div className="sm:flex gap-10 hidden sm:show  py-4">
                 <button
                     className={location.pathname === "/planos" ? `dark:shadow-underline-dark shadow-underline-light` : undefined}
                     onClick={() => nav("/planos")}

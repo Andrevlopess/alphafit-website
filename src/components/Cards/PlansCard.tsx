@@ -29,7 +29,7 @@ export default function PlanCard({ plan }: Props) {
             ref={ref}
             style={spring}
         >
-            <div className="flex flex-col border-t-8 border-red-500 gap-12 items-center p-8 dark:bg-zinc-900 bg-zinc-100 justify-between shadow-2xl">
+            <div className="flex flex-col border-t-8 border-violet-500 gap-12 items-center p-8 dark:bg-zinc-900 bg-zinc-100 justify-between shadow-2xl">
                 <div className="flex flex-col gap-12">
                     <label className="text-2xl md:text-3xl font-extrabold text-zinc-900 dark:text-white text-center">
                         {plan.title}

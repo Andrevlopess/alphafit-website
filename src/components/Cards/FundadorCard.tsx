@@ -14,7 +14,7 @@ export default function FundadorCard({ fundador }: Props) {
                 <label className="text-xl lg:text-3xl font-black text-zinc-900 dark:text-white">
                     {fundador.name}
                 </label>
-                <label className="text-lg lg:text-2xl font-black text-red-500">
+                <label className="text-lg lg:text-2xl font-black text-violet-500">
                     {fundador.function}
                 </label>
                 <div className="flex gap-6">

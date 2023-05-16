@@ -13,11 +13,11 @@ export default function AboutUsPage() {
     const nav = useNavigate()
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-24 transition">
+        <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-24 transition">
             <FAB />
             <Header />
             <div className="flex items-center flex-col gap-8 border-b-2 md:mx-12 md:p-12 mx-4 p-4">
-                <label className="text-4xl lg:text-7xl font-extrabold text-zinc-900 dark:text-white">andre's <span className="text-red-600">gym</span></label>
+                <label className="text-4xl lg:text-7xl font-extrabold text-zinc-900 dark:text-white">Alpha <span className="text-violet-600">fit</span></label>
                 <label className="text-xl lg:text-3xl font-black text-zinc-900 dark:text-white">
                     Desde 2010 acreditando na sua evolução!
                 </label>
@@ -30,7 +30,7 @@ export default function AboutUsPage() {
             </div>
             <div className="dark:bg-zinc-900 bg-zinc-100 flex flex-col md:gap-24 gap-6 md:mx-12 md:p-12 mx-4 p-4 justify-center items-center">
                 <label className="text-xl lg:text-3xl font-black text-zinc-900 dark:text-white text-center">
-                    Conheça os fundadores da andre's <span className="text-red-600">gym</span>
+                    Conheça os fundadores da Aplha <span className="text-violet-600">fit</span>
                 </label>
                 <div className="grid lg:grid-cols-2 gap-6 rounded-sm">
                     {

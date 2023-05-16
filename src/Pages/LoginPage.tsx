@@ -24,7 +24,7 @@ export default function LoginPage() {
     )
 
     return (
-        <div className="font-inter dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12  transition">
+        <div className="font-archivo dark:bg-zinc-900 bg-zinc-100 flex flex-col gap-12  transition">
             <FAB />
             <Header />
             <div className="flex justify-center items-center gap-12 px-6 flex-wrap-reverse">
@@ -73,7 +73,7 @@ export default function LoginPage() {
                             onClick={() => nav("/signup")}
                         >
                             <label className="text-zinc-800 dark:text-zinc-300 text-sm text-center">
-                                Ainda não tem uma conta? <span className="text-red-500">Registre-se</span>
+                                Ainda não tem uma conta? <span className="text-violet-500">Registre-se</span>
                             </label>
                         </button>
                     </div>
@@ -84,7 +84,7 @@ export default function LoginPage() {
                 <animated.div
                     style={spring}
                     className="flex flex-col gap-4 md:w-1/3 md:px-0 px-12">
-                    <label className="text-xl font-extrabold text-zinc-900 dark:text-white ">andre's <span className="text-red-600">gym</span></label>
+                    <label className="text-xl font-extrabold text-zinc-900 dark:text-white ">alpha <span className="text-violet-600">fit</span></label>
                     <label className="text-4xl lg:text-7xl font-black text-zinc-900 dark:text-white">
                         Login
                     </label>

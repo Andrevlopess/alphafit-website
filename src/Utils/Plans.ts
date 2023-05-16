@@ -23,7 +23,7 @@ export const plans: IPlan[] = [
         benefits: [
             "Área de musculação",
             "Personal Trainers",
-            "Treino em todas as unidades andre's gym",
+            "Treino em todas as unidades alpha fit",
             "Trazer um amigo para treinar com você",
             "Avaliação grátis a cada 90 dias",
             "Área de aeróbicos e alongamentos",

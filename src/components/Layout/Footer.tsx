@@ -6,7 +6,7 @@ export default function Footer() {
 
     return (
         <div className="flex flex-col border-t-2 items-center justify-center text-zinc-900 dark:text-white gap-12 py-6">
-            <label className="text-xl font-extrabold border-b-2 pb-2">andre's <span className="text-red-600">gym</span></label>
+            <label className="text-xl font-extrabold border-b-2 pb-2">alpha <span className="text-violet-600">fit</span></label>
             <div className="flex gap-12">
                 <button
                     onClick={() => nav("/planos")}
