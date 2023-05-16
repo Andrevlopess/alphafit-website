@@ -1,6 +1,5 @@
 import { plans } from "../Utils/Plans";
 import PlanCard from "../components/Cards/PlansCard";
-import FAB from "../components/FAB";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 
