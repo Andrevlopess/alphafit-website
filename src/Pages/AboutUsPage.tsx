@@ -22,7 +22,7 @@ export default function AboutUsPage() {
             </div>
             <div className="flex flex-col justify-center items-center gap-24 md:mx-12 md:p-12 mx-4 p-4">
                 <label className="text-xl lg:text-3xl font-black text-zinc-900 dark:text-white">
-                    Somos mais de 20 unidades espalhadas por 9 estados brasileiros
+                   A <span className="text-violet-500">segunda</span>  maior academia de São Paulo e a <span className="text-violet-500">quinta</span> maior do Brasil
                 </label>
                 <img src={BrasilMap} className="drop-shadow-lg" />
             </div>

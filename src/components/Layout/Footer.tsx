@@ -7,10 +7,10 @@ export default function Footer() {
 
     return (
         <div className="flex flex-col border-t-2 items-center justify-center text-zinc-900 dark:text-white gap-12 py-6">
-           <button
+            <button
                 onClick={() => nav("/")}
             >
-               <img src={AlphaLogo} className="h-14 w-14"/>
+                <img src={AlphaLogo} className="h-14 w-14" />
             </button>
             <div className="flex gap-12">
                 <button
@@ -35,7 +35,9 @@ export default function Footer() {
                     </label>
                 </button>
             </div>
-            <label className="text-sm text-zinc-400">Todos os direitos reservados andre vitor lopes &copy;</label>
+            <label className="text-md text-zinc-400">Todos os direitos reservados
+                <span className="text-md text-violet-500"> andre vitor lopes </span>
+                 &copy;</label>
         </div>
     )
 }

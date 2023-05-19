@@ -77,8 +77,8 @@ export default function Home() {
                             <label className="text-3xl text-zinc-900 dark:text-white font-bold">alunos já passaram por nossas academias</label>
                         </div>
                         <div className="border-l-4 border-violet-600 flex flex-col px-4">
-                            <label className="text-5xl sm:text-7xl text-violet-600 font-extrabold">20 unidades</label>
-                            <label className="text-3xl text-zinc-900 dark:text-white font-bold">espalhadas por 17 estados do Brasil</label>
+                            <label className="text-5xl sm:text-7xl text-violet-600 font-extrabold"> Segunda maior</label>
+                            <label className="text-3xl text-zinc-900 dark:text-white font-bold">academia e centro de treinamento de São Paulo</label>
                         </div>
                     </div>
                 </animated.div>
@@ -91,7 +91,7 @@ export default function Home() {
                     <label className="text-3xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white">Modalidades alpha <span className="text-violet-600">fit</span></label>
                 </div>
 
-                <div className="grid lg:grid-cols-3 gap-6 dark:bg-zinc-901 bg-zinc-200 py-6 rounded-sm">
+                <div className="flex justify-evenly gap-6 dark:bg-zinc-901 bg-zinc-200 py-6 rounded-sm">
                     {
                         modalidades.map(modalidade => {
                             return (

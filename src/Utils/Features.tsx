@@ -27,19 +27,13 @@ export const modalidades: IModalidades[] = [
         id:1,
         title: "Musculação",
         icon: "",
-        description: "Temos aulas para quem quer se alongar e relaxar com professores qualificados"
+        description: "Areás espaçosas, ventiladas e aconchegantes para você dar o seu melhor!"
     },
     {
         id:2,
         title: "Pilates e Yoga",
         icon: "",
         description: "Temos aulas para quem quer se alongar e relaxar com professores qualificados"
-    },
-    {
-        id:3,
-        title: "Artes Marciais",
-        icon: "",
-        description: "Temos aulas para quem quer se alongar e relaxar com professores qualificados"
-    },
+    }
 ]
 
