@@ -54,7 +54,7 @@ export default function Home() {
                 </button>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-6 dark:bg-zinc-901 bg-zinc-200 mx-6 py-6 rounded-sm my-12">
+            <div className=" gap-6 dark:bg-zinc-901 bg-zinc-200 mx-6 py-6 rounded-sm my-12 lg:columns-3">
                 {
                     features.map(feature => {
                         return (
@@ -91,7 +91,7 @@ export default function Home() {
                     <label className="text-3xl sm:text-5xl font-extrabold text-zinc-900 dark:text-white">Modalidades alpha <span className="text-violet-600">fit</span></label>
                 </div>
 
-                <div className="flex justify-evenly gap-6 dark:bg-zinc-901 bg-zinc-200 py-6 rounded-sm">
+                <div className="flex justify-evenly gap-6 dark:bg-zinc-901 bg-zinc-200 py-6 rounded-sm flex-wrap">
                     {
                         modalidades.map(modalidade => {
                             return (

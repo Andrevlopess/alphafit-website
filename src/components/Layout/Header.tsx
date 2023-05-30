@@ -14,7 +14,7 @@ export default function Header() {
 
     //  
     return (
-        <div className={`flex justify-between items-center border-b dark:border-white text-zinc-900 dark:text-white border-zinc-300 transition backdrop-blur-lg px-6`}>
+        <div className={`flex justify-between items-center border-b dark:border-white text-zinc-900 dark:text-white border-zinc-300 transition backdrop-blur-lg px-6 py-4`}>
             <button
                 onClick={() => nav("/")}
             >
@@ -24,6 +24,7 @@ export default function Header() {
             {isOpen &&
                 <DrawerHeader close={setIsOpen} isOpen={isOpen} />
             }
+
             <button
                 className="sm:hidden px-6 py-4"
                 onClick={() => setIsOpen(!isOpen)}

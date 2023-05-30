@@ -22,7 +22,7 @@ export default function DrawerHeader({ close, isOpen }: Props) {
     return (
         <animated.div
             style={props}
-            className="absolute top-0 w-full flex flex-col dark:bg-zinc-900 z-50 bg-zinc-100 border-b-2 px-6 py-4 gap-12"
+            className="absolute top-0 w-full flex flex-col dark:bg-zinc-900 z-50 bg-zinc-100 border-b-2 px-6 py-4 gap-12 inset-x-0"
         >
             <div className="flex justify-between">
                 <button
