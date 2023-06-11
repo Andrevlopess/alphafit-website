@@ -4,8 +4,8 @@ export const plans: IPlan[] = [
     {
         id: 1,
         title: "Normal",
-        prevPrice: 119.90,
-        atualPrice: 99.90,
+        prevPrice: 159.90,
+        atualPrice: 139.90,
         benefits: [
             "Área de musculação",
             "Área de aeróbicos e alongamentos",
@@ -18,8 +18,8 @@ export const plans: IPlan[] = [
     {
         id: 2,
         title: "Premium",
-        prevPrice: 149.90,
-        atualPrice: 119.90,
+        prevPrice: 199.90,
+        atualPrice: 179.90,
         benefits: [
             "Área de musculação",
             "Personal Trainers",
